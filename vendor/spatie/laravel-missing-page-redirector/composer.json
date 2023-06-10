@@ -1,0 +1,52 @@
+{
+    "name": "spatie/laravel-missing-page-redirector",
+    "description": "Redirect missing pages in your Laravel application",
+    "keywords": [
+        "spatie",
+        "laravel-missing-page-redirector"
+    ],
+    "homepage": "https://github.com/spatie/laravel-missing-page-redirector",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Freek Van der Herten",
+            "email": "freek@spatie.be",
+            "homepage": "https://spatie.be",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2|^8.0",
+        "laravel/framework": "~5.8.0|^6.0|^7.0|^8.0",
+        "spatie/url": "^1.0|^2.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "~3.8.0|^4.0|^5.0|^6.0",
+        "phpunit/phpunit": "^8.0|^9.0|^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Spatie\\MissingPageRedirector\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Spatie\\MissingPageRedirector\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Spatie\\MissingPageRedirector\\MissingPageRedirectorServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

@@ -1,0 +1,64 @@
+{
+  "name": "f9webltd/laravel-meta",
+  "description": "Render meta tags in your Laravel application",
+  "keywords": [
+    "laravel",
+    "laravel meta",
+    "laravel meta tags",
+    "meta",
+    "meta tags",
+    "laravel seo",
+    "laravel open graph tags",
+    "laravel header meta tags"
+  ],
+  "homepage": "https://github.com/f9webltd/laravel-meta",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Rob Allport",
+      "email": "rob@f9web.co.uk",
+      "homepage": "https://www.f9web.co.uk",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.2 | ^8.0",
+    "illuminate/config": "5.8.* || ^6.0 || ^7.0 || ^8.0",
+    "illuminate/support": "5.8.* || ^6.0 || ^7.0 || ^8.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": ">=3.8",
+    "phpunit/phpunit": "^7.0|^8.0|^9.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "F9Web\\Meta\\": "src"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "F9Web\\Meta\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "F9Web\\Meta\\MetaServiceProvider"
+      ],
+      "aliases": {
+        "Meta": "F9Web\\Meta\\MetaFacade"
+      }
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
